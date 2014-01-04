@@ -29,6 +29,7 @@
                 <ul data-role="listview" data-filter="true" data-theme="c" data-filter-reveal="true" id="input-search" data-filter-placeholder="Buscar servidor...">
             		<!--Listado de Servidores-->
                 </ul>
+                <a href="#" onclick="alerta();" data-role="button">Boton Alerta</a>
             </div>
         </div>
 
@@ -48,7 +49,7 @@
         		//alert("hola mundo");
     			$("ul[data-role='listview']").attr("onkeydown","tecla(event);");
         	});
-        	alert("New jq");
+        	
         	//var elemento = document.getElementsByClassName("ui-input-text");
         	//elemento.setAttribute('onkeydown','tecla(event);');
         	function tecla (e)
@@ -56,6 +57,10 @@
 			    var evt = e ? e : event;
 			    var key = window.Event ? evt.which : evt.keyCode;
 			    alert (key);
+			}
+
+			function alerta(){
+				alert("New jq");	
 			}
         </script>
     </body>
