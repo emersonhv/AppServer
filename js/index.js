@@ -64,7 +64,7 @@ var app = {
                 console.log(args);
         });
         } catch (ex) {
-            console.log(ex.message);
+            alert(ex.message);
         }
     }
 
